@@ -39,4 +39,8 @@ echo isset($nome) ? 'True' : 'False';
 
 echo "<hr>";
 
+// Verifica se tem algo existente dentro da variavel
 echo empty($nome) ? 'True' : 'False';
+
+echo "<hr>";
+
