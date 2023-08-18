@@ -1,0 +1,57 @@
+<?php
+class Usuario{
+
+    protected $nomeAluno;
+    private $senha;
+}
+
+class Aluno{
+
+    public $nomeAluno;
+    protected $CPF;
+    public $email;
+    public $dataNascimento;
+    public $celular;
+    public $telefone;
+
+}
+ 
+class Livro{
+
+    public $tituloLivro;
+    public $autor;
+    public $anoPublicacao;
+    public $numeroPagina;
+    private $preco;
+    public $isbn;
+
+}
+
+class Emprestimo{
+
+    public $nomeAluno;
+    public $titulo;
+    public $dataRetirada;
+    public $dataDevolucao;
+}
+
+class Biblioteca{
+
+    public $tituloLivro;
+    public $nomeAluno;
+    public $dataRetirada;
+    public $dataDevolucao;
+
+    public function __construct(Livro $tituloLivro, Aluno $nomeAluno, $dataRetirada, $dataDevolucao){
+
+        $this->nomeAluno= new Aluno();
+        $this->nomeAluno->nomeAluno = "Nicolas";
+
+        $this->tituloLivro= new Livro();
+        $this->tituloLivro->tituloLivro = "Beserk";
+        $this->dataRetirada->dataRetirada = "10/10/2023";
+        $this->dataDevolucao->dataDevolucao = "20/10/2023";
+        
+        
+    }
+}
