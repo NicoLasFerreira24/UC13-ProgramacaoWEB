@@ -59,12 +59,14 @@ if (isset($_POST['aluno']) && isset($_POST['email']) && isset($_POST['senha']) &
     <title>Cadastro de Usuário</title>
 
     <style>
+
         body {
             font-family: Arial, sans-serif;
             margin: 5px;
             padding: 20px;
             background-color: #F5FFFA;
         }
+        
     </style>  
 
 </head>
@@ -77,23 +79,25 @@ if (isset($_POST['aluno']) && isset($_POST['email']) && isset($_POST['senha']) &
 
         <h4>Cadastro de Usuário</h4>
 
-        <form method="post">
+        <form method = "post">
 
-            <label for="nome">Digite seu Nome:</label><br>
-            <input type="text" id="nome" name="nome" required><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br>
-            <label for="telefone">Telefone:</label><br>
-            <input type="tel" id="telefone" name="telefone" required><br>
-            <label for="cpf">CPF:</label><br>
-            <input type="text" id="cpf" name="cpf" required><br>
-            <label for="celular">Celular:</label><br>
-            <input type="tel" id="celular" name="celular" required><br>
-            <label for="dataNascimento">Data de Nascimento:</label><br>
-            <input type="date" id="dataNascimento" name="dataNascimento" required><br>
+            <label for = "nome">Digite seu Nome:</label><br>
+            <input type = "text" id = "nome" name = "nome" required><br>
+            <label for = "email">Email:</label><br>
+            <input type = "email" id = "email" name = "email" required><br>
+            <label for = "Senha">Senha:</label><br>
+            <input type = "text" id = "senha" name = "senha" required><br>
+            <label for = "cpf">CPF:</label><br>
+            <input type = "text" id = "cpf" name = "cpf" required><br>
+            <label for = "perfil">Perfil:</label><br>
+            <input type = "radio" id = "perfil" name = "perfil" value = "aluno">
+            <label for = "perfil1">Aluno</label><br>
+            <input type = "radio" id="perfil1" name = "perfil" value = "administrativo">
+            <label for = "perfil1">Administrativo</label><br>
+            <input type = "submit" value = "Cadastrar" onclick ="exibirMensagem()">
 
-            <button type="submit">Cadastrar</button>
-
-        </form>
+         </form>
 
     </div>
+
+</body>    
